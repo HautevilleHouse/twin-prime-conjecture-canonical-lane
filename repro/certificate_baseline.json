@@ -1,0 +1,78 @@
+{
+  "all_pass": true,
+  "all_pass_normalized": true,
+  "blockers": {
+    "TP_G1": [],
+    "TP_G2": [],
+    "TP_G3": [],
+    "TP_G4": [],
+    "TP_G5": [],
+    "TP_G6": [],
+    "TP_GM": []
+  },
+  "derived": {
+    "strict_coh_zero": true,
+    "strict_margin": 0.8116883116883117
+  },
+  "gates": {
+    "TP_G1": "PASS",
+    "TP_G2": "PASS",
+    "TP_G3": "PASS",
+    "TP_G4": "PASS",
+    "TP_G5": "PASS",
+    "TP_G6": "PASS",
+    "TP_GM": "PASS"
+  },
+  "inputs": {
+    "eps_coh": 0.0,
+    "kappa_compact": 0.8116883116883117,
+    "kappa_sieve": 1.0836999999999999,
+    "parity_transfer": 1.0294,
+    "rho_rigidity": 1.071,
+    "sigma_distribution": 1.067,
+    "sigma_star_can": 1.049
+  },
+  "lane": {
+    "active_lane": "manifold_constrained",
+    "canonical_theorem_lane": "manifold_constrained"
+  },
+  "meta": {
+    "computed_at_utc": "2026-03-11T15:05:03+00:00",
+    "framework": "twin_prime_conjecture"
+  },
+  "normalized": {
+    "blockers": {
+      "G1": [],
+      "G2": [],
+      "G3": [],
+      "G4": [],
+      "G5": [],
+      "G6": [],
+      "GCoh": [],
+      "GM": []
+    },
+    "gates": {
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "PASS",
+      "G5": "PASS",
+      "G6": "NA",
+      "GCoh": "PASS",
+      "GM": "PASS"
+    }
+  },
+  "schema": {
+    "g6_policy": "NA means this framework has no standalone pre-coherence G6 gate",
+    "normalized_gate_keys": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "GCoh",
+      "GM"
+    ]
+  }
+}

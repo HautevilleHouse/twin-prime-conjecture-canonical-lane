@@ -1,0 +1,92 @@
+{
+  "schema_version": "2026-03-05",
+  "framework": "twin_prime_conjecture",
+  "constants": {
+    "kappa_sieve": {
+      "status": "derived_numeric",
+      "formula": "c_sieve_raw * level_density_raw - e_sieve_raw",
+      "components": {
+        "c_sieve_raw": 1.41,
+        "level_density_raw": 0.92,
+        "e_sieve_raw": 0.2135
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Section 4.5 / Appendix A",
+      "notes": "kappa_sieve theorem-level floor.",
+      "required_positive": true
+    },
+    "sigma_distribution": {
+      "status": "derived_numeric",
+      "formula": "distribution_floor_raw - bilinear_loss_raw - truncation_loss_raw",
+      "components": {
+        "distribution_floor_raw": 1.39,
+        "bilinear_loss_raw": 0.18,
+        "truncation_loss_raw": 0.143
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Section 5.2 / Appendix B",
+      "notes": "sigma_distribution theorem-level capture floor.",
+      "required_positive": true
+    },
+    "kappa_compact": {
+      "status": "derived_numeric",
+      "formula": "1.0 / (1.0 + delta_comp_sup_raw)",
+      "components": {
+        "delta_comp_sup_raw": 0.232
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Section 5.3 / Appendix C",
+      "notes": "kappa_compact theorem-level compactness floor.",
+      "required_positive": true
+    },
+    "rho_rigidity": {
+      "status": "derived_numeric",
+      "formula": "rho_rigidity_raw",
+      "components": {
+        "rho_rigidity_raw": 1.071
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Section 6.1 / Appendix D",
+      "notes": "rho_rigidity theorem-level rigidity floor.",
+      "required_positive": true
+    },
+    "parity_transfer": {
+      "status": "derived_numeric",
+      "formula": "c_parity_raw * admissible_gain_raw - e_parity_raw",
+      "components": {
+        "c_parity_raw": 1.11,
+        "admissible_gain_raw": 1.04,
+        "e_parity_raw": 0.125
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Section 6.2 / Appendix E.4",
+      "notes": "parity_transfer theorem-level transfer floor.",
+      "required_positive": true
+    },
+    "eps_coh": {
+      "status": "derived_numeric",
+      "formula": "eps_coh_raw",
+      "components": {
+        "eps_coh_raw": 0.0
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Appendix E.6",
+      "notes": "Strict coherence target.",
+      "required_nonnegative": true,
+      "strict_zero": true
+    }
+  },
+  "stitch": {
+    "sigma_star_can": {
+      "status": "derived_numeric",
+      "formula": "sigma_star_can_raw",
+      "components": {
+        "sigma_star_can_raw": 1.049
+      },
+      "reference": 1.0,
+      "source_section": "paper/TWIN_PRIME_CONJECTURE_PREPRINT.md Section 5 / stitch constants",
+      "notes": "sigma_star_can theorem-level stitch constant.",
+      "required_positive": true
+    }
+  }
+}

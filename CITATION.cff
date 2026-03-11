@@ -1,0 +1,24 @@
+
+  title: "The Twin Prime Conjecture via Prime-Gap Persistence"
+  message: "If you use this workspace, cite the manuscript and theorem notes."
+  type: software
+  authors:
+    - name: "HautevilleHouse"
+  date-released: 2026-03-11
+  repository-code: "https://github.com/HautevilleHouse/twin-prime-conjecture-canonical-lane"
+  url: "https://github.com/HautevilleHouse/twin-prime-conjecture-canonical-lane"
+  license: None
+  keywords:
+    - analytic-number-theory
+- mathematical-proof
+- prime-gaps
+- reproducibility
+- sieve-methods
+- twin-prime-conjecture
+- number-theory
+  preferred-citation:
+    type: article
+    title: "The Twin Prime Conjecture via Prime-Gap Persistence"
+    authors:
+      - name: "HautevilleHouse"
+    date: 2026-03-11
