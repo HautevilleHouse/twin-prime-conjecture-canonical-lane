@@ -1,10 +1,42 @@
-# EG2 Public Note
+# EG2 Public Note (Capture and Restart)
 
-Gate: `TP_G2`
-Constant: `sigma_distribution`
+Mature wording: `transport / local-to-global transfer`.
 
-This note isolates the capture package. The defect functional `D_tau` obeys a local-to-global inequality with explicit continuous and restart losses. The extracted theorem-level constant is `sigma_distribution > 0`, obtained from the raw formula
+In-paper anchor: `paper/TWIN_PRIME_CONJECTURE_PREPRINT.md` (`TP_G2`).
 
-`distribution_floor_raw - bilinear_loss_raw - truncation_loss_raw`.
+## Goal
+Expand the compressed capture/restart language into the local-to-global transport gate for `prove that the twin-prime pattern persists infinitely often by routing admissible sieve states through coercive sieve response, distribution capture, compactness, rigidity, parity transfer, and strict coherence`.
 
-The gate closes when the admissible flow preserves a strictly positive defect floor after subtracting every tracked loss term.
+## Objects
+
+- transport carrier: the admissible evolution, deformation, or routed lattice declared in the preprint.
+- capture floor: `sigma_distribution`.
+- restart law: the normalization/re-entry rule that keeps corrective steps inside the admissible class.
+- carried losses: defect, restart, and normalization losses that must remain explicit.
+
+## Closure Criterion
+
+`TP_G2` closes when `sigma_distribution` survives admissible losses and restart corrections: distribution defect stays above capture floor across truncation and bilinear losses.
+This is the transport contribution to `M_TP`.
+
+## Lemma Chain and Proof Payload
+
+### Lemma EG2.1 (transport accounting)
+Every transport step used by the lane is charged to the declared defect ledger instead of being absorbed into prose.
+
+Payload: verify that the capture constant `sigma_distribution` is present in the constants registry and extraction inputs.
+
+### Lemma EG2.2 (restart preservation)
+Restart or normalization preserves the declared admissible class and does not create an untracked remainder.
+
+Payload: inspect the repro script and guard output for the gate tied to `sigma_distribution`.
+
+### Theorem EG2.3 (capture gate closure)
+If transport accounting and restart preservation hold, then `TP_G2` carries local control forward without breaking admissibility.
+
+## Current Instantiation
+
+- gate: `TP_G2`
+- artifact key: `sigma_distribution`
+- mature equivalent: `transport / local-to-global transfer`
+- audit surface: `repro/run_repro.sh` and `repro/certificate_runtime.json`
